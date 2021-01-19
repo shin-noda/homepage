@@ -1,10 +1,109 @@
+<!--
+    Name: Shin
+    Student#: 991527227
+-->
 <!DOCTYPE html>
-<head>
-    <title>
-        Shin's web site
-    </title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    Hello World!
-</body>
+<html>
+    <head>
+        <title>Shin</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/nodas.css">
+        <script type="text/javascript" src="js/product.js"></script>
+        <script type="text/javascript" src="js/nodas.js"></script>
+    </head>
+
+    <body>
+        <!-- container starts here -->
+        <div class="container">
+            <!-- Header -->
+            <header>
+                <h1 class="pageTitle">Products for Sale based on nodas</h1>
+            </header>
+
+            <!-- form starts here-->
+            <form id="productForm" action="pages/quotePage.html" method="post">
+                <!-- gridContainer starts here -->
+                <div class="gridContainer">
+                    <!-- Customer's name -->
+                    <div class="customerNameArea1">
+                        <h2 class="itemLabel">Your Name</h2>
+                    </div>
+                    <div class="customerNameArea2">
+                        <input id="customerName" type="text" placeholder="shin">
+                    </div>
+
+                    <!-- Customer's email -->
+                    <div class="customerEmailArea1">
+                        <h2 class="itemLabel">Email</h2>
+                    </div>
+                    <div class="customerEmailArea2">
+                        <input id="customerEmail" type="email" placeholder="nodas@sheridancollege.ca">
+                    </div>
+
+                    <!-- Drop down list. Login name is "nodasshin". (nodas:user name, shin: my name)-->
+                    <!-- Only one product should be selected. -->
+                    <div class="productListArea1">
+                        <h2 class="itemLabel">Product</h2>
+                    </div>
+                    <div class="productListArea2">
+                        <select id="product">
+                            <option value="2">newspaper</option>
+                            <option value="750">oven</option>
+                            <option value="1">donut</option>
+                            <option value="95">amplifier</option>
+                            <option value="165">sneakers</option>
+                            <option value="8">sandwich</option>
+                            <option value="11000">harp</option>
+                            <option value="105">iron</option>
+                            <option value="20">novel</option>
+                        </select>
+
+                        <!-- Image will be changed based on the useres choice-->
+                        <img class="itemImage" src="images/newspaper.jpg" />
+                    </div>
+
+                    <!-- Price-->
+                    <div class="priceArea1">
+                        <h2 class="itemLabel">Price($)</h2>
+                    </div>
+                    <div class="priceArea2">
+                        <input id="price" type="text" value="2" readonly>
+                    </div>
+
+
+                    <!-- How many to order. Default is 1. -->
+                    <div class="orderArea1">
+                        <h2 class="itemLabel">Order(s)</h2>
+                    </div>
+                    <div class="orderArea2">
+                        <input id="order" type="number" min="1" value="1" step="1">
+                    </div>
+        
+                    <!-- 2 buttons. Sava data and Link button. -->
+                    <div class="buttonArea">
+                        <!-- Without the attribute type="button", it will submit a form -->
+                        <button id="saveButton" type="button">Save</button>
+
+                        <!-- This is for submission, type is not "submit" -->
+                        <!-- Before the submission, Javascript function check the validity -->
+                        <button id="nextPageButton" type="button">Next Page</button>
+                    </div>
+                </div>
+                <!-- gridContainer ends here -->
+            </form>
+            <!-- form ends here -->
+
+            <!-- Footer -->
+            <!-- Full Name/Student#/Campus/Picture -->
+            <footer>
+                <div class="footerArea">
+                    <p class="basePositionFooterInfo">Shinnosuke Noda</p>
+                    <p class="footerInfo">991527227</p>
+                    <p class="footerInfo">Trafalgar</p>
+                    <img class="picture" src="images/picture.png" />
+                </div>
+            </footer>
+        </div>
+        <!-- container ends here -->
+    </body>
+</html>
