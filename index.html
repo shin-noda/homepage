@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Shin's Homepage</title>
+        <title>My Homepage</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="css/nodas.css">
-        <script type="text/javascript" src="js/product.js"></script>
-        <script type="text/javascript" src="js/nodas.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/my-website.js"></script>
     </head>
 
     <body>
@@ -13,82 +13,73 @@
         <div class="container">
             <!-- Header -->
             <header>
-                <h1 class="pageTitle">Shin's Homapage</h1>
+                <h1 class="pageTitle">My Homapage</h1>
             </header>
 
-            <!-- form starts here-->
-            <form id="productForm" action="pages/quotePage.html" method="post">
-                <!-- gridContainer starts here -->
-                <div class="gridContainer">
-                    <!-- Customer's name -->
-                    <div class="customerNameArea1">
-                        <h2 class="itemLabel">Your Name</h2>
-                    </div>
-                    <div class="customerNameArea2">
-                        <input id="customerName" type="text" placeholder="shin">
-                    </div>
+            <!-- subcontainer starts here -->
+            <div class="subcontainer">
 
-                    <!-- Customer's email -->
-                    <div class="customerEmailArea1">
-                        <h2 class="itemLabel">Email</h2>
-                    </div>
-                    <div class="customerEmailArea2">
-                        <input id="customerEmail" type="email" placeholder="nodas@sheridancollege.ca">
-                    </div>
+                <!-- home-block1 starts here -->
+                <div id="home-block1" class="home-blocks">
+                    <!-- Image 1 at the top-->
+                    <img src="images/project.svg" alt="projects" class="block-image">
+                    
+                    <!-- Title 1 -->
+                    <h2>Projects</h2>
 
-                    <!-- Drop down list. Login name is "nodasshin". (nodas:user name, shin: my name)-->
-                    <!-- Only one product should be selected. -->
-                    <div class="productListArea1">
-                        <h2 class="itemLabel">Product</h2>
-                    </div>
-                    <div class="productListArea2">
-                        <select id="product">
-                            <option value="2">newspaper</option>
-                            <option value="750">oven</option>
-                            <option value="1">donut</option>
-                            <option value="95">amplifier</option>
-                            <option value="165">sneakers</option>
-                            <option value="8">sandwich</option>
-                            <option value="11000">harp</option>
-                            <option value="105">iron</option>
-                            <option value="20">novel</option>
-                        </select>
+                    <p class="summary">
+                        You can see my projects here.
+                    </p>
 
-                        <!-- Image will be changed based on the useres choice-->
-                        <img class="itemImage" src="images/newspaper.jpg" />
+                    <div><!-- Jump to the project page -->
+                        <button id="project-button" type="button">Learn More</button>
                     </div>
+                    
+                </div>
+                <!-- home-block1 ends here -->
+    
+                <!-- home-block2 starts here -->
+                <div id="home-block2" class="home-blocks">
+                    <!-- Image 2 at the top-->
+                    <img src="images/me.svg" alt="me" class="block-image">
 
-                    <!-- Price-->
-                    <div class="priceArea1">
-                        <h2 class="itemLabel">Price($)</h2>
-                    </div>
-                    <div class="priceArea2">
-                        <input id="price" type="text" value="2" readonly>
-                    </div>
+                    <!-- Title 2 -->
+                    <h2>About Me</h2>
 
+                    <p class="summary">
+                        You can find more information about me here.
+                    </p>
 
-                    <!-- How many to order. Default is 1. -->
-                    <div class="orderArea1">
-                        <h2 class="itemLabel">Order(s)</h2>
+                    <div>
+                        <!-- Jump to the about me page -->
+                        <button id="about-me-button" type="button">Learn More</button>
                     </div>
-                    <div class="orderArea2">
-                        <input id="order" type="number" min="1" value="1" step="1">
-                    </div>
-        
-                    <!-- 2 buttons. Sava data and Link button. -->
-                    <div class="buttonArea">
-                        <!-- Without the attribute type="button", it will submit a form -->
-                        <button id="saveButton" type="button">Save</button>
+                    
+                </div>
+                <!-- home-block2 ends here -->
+    
+                <!-- home-block3 starts here -->
+                <div id="home-block3" class="home-blocks">
+                    <!-- Image 3 at the top-->
+                    <img src="images/contact.svg" alt="contact" class="block-image">
 
-                        <!-- This is for submission, type is not "submit" -->
-                        <!-- Before the submission, Javascript function check the validity -->
-                        <button id="nextPageButton" type="button">Next Page</button>
+                    <!-- Title 3 -->
+                    <h2>Contact</h2>
+
+                    <p class="summary">
+                        Please email me with any questions.
+                    </p>
+
+                    <div>
+                        <!-- Jump to the about me page -->
+                        <button id="contact-button" type="button">Contact Me</button>
                     </div>
                 </div>
-                <!-- gridContainer ends here -->
-            </form>
-            <!-- form ends here -->
+                <!-- home-block3 ends here -->
 
+            </div>
+            <!-- subcontainer ends here -->
+            
             <!-- Footer -->
             <footer>
                 <div class="footerArea">
