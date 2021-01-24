@@ -1,4 +1,4 @@
-// Made a class Product so that it's transferable and maintainable
+// Made a class MainPage so that it's transferable and maintainable
 class MainPage {
     constructor(parentElement) {
         // Set the parent element
@@ -8,9 +8,6 @@ class MainPage {
 
     // This sets all addEventListener
     setAllEventListeners() {
-        // Clear the local storage
-        localStorage.clear();
-
         // Set the function for home-block1
         this.parentElement.querySelector("#home-block1").addEventListener("click", () => this.processHomeBlock1());
 
@@ -34,8 +31,9 @@ class MainPage {
     }
 
     // This is for home-block3
+    // Open the email editor
     processHomeBlock3() {
-        // Go to the contact page
-        window.location.href = "./pages/contact.html";
+        // Open the mail editor
+        window.location.href = "mailto:shin.my.homepage@gmail.com";
     }
 }
