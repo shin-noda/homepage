@@ -1,12 +1,12 @@
 window.onload = function() {
     // parentElement is .container
-    const subPage = new SubPage('.container');
+    const projectDetail = new ProjectDetail('.container');
 
     // set all eventlisteners
-    subPage.setAllEventListeners();
+    projectDetail.setAllEventListeners();
 };
 
-class SubPage {
+class ProjectDetail {
     constructor(parentElement) {
         // Set the parent element
         // In this assignment, it's .container
@@ -16,12 +16,12 @@ class SubPage {
     // This sets all addEventListener
     setAllEventListeners() {
         // Set the function for back-button
-        this.parentElement.querySelector(".back-button").addEventListener("click", () => this.processBackButton());
+        this.parentElement.querySelector(".project-back-button").addEventListener("click", () => this.processProjectBackButton());
     }
 
     // This is for back-button
-    processBackButton() {
-        // Go to the main page
-        window.location.href = "../index.html";
+    processProjectBackButton() {
+        // Go to the previous page
+        window.location.href = "../project.html";
     }
 }
