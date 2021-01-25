@@ -1,0 +1,33 @@
+#github-link-button {
+    margin-top:0px;
+    background-color:blue;
+    border-style:none;
+    border-radius:10px;
+    box-shadow:3px 3px lightgrey;
+    padding:10px 20px 10px 20px;
+}
+#github-link-button:hover {
+    background-color:lightskyblue;
+}
+.project-window {
+    display:inline-block;
+    border: 2px solid black;
+    border-radius:10px;
+    box-shadow:3px 3px lightgrey;
+    width:300px;
+    height:350px;
+    margin:10px;
+    vertical-align:top;
+    background-color:white;
+    cursor:pointer;
+}
+.project-window:hover {
+    background-color: gainsboro;
+}
+.project-image {
+    width:100%;
+    max-height:150px;
+    border-radius:10px;
+    object-fit:cover;
+    cursor:pointer;
+}
