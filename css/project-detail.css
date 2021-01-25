@@ -25,3 +25,17 @@ td {
     background-color:lightgrey;
     padding:0 20px 0 20px;
 }
+.download-button {
+    background-color:blue;
+    border:none;
+    margin:0px 0px 20px 0px;
+    padding: 10px 30px 10px 30px;
+}
+.download-button:hover {
+    background-color: skyblue;
+}
+.project-clip {
+    margin:20px 0px 20px 0px;
+    width:200px;
+    height:auto;
+}
