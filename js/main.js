@@ -12,6 +12,9 @@ class MainPage {
         // Set the parent element
         // In this assignment, it's .container
         this.parentElement = document.querySelector(parentElement);
+
+        // Update the copyright
+        this.addYearAndName();
     }
 
     // This sets all addEventListener
@@ -43,5 +46,17 @@ class MainPage {
     processHomeBlock3() {
         // Open the mail editor
         window.location.href = "mailto:shin.my.homepage@gmail.com";
+    }
+
+    // This is for copyright
+    addYearAndName() {
+        const e = this.parentElement.querySelector(".footer-content");
+
+        // Add year and name
+        const year = new Date().getFullYear();
+
+        const newCopyrightText = e.firstChild.nodeValue + " " + year + " Shin";
+
+        e.firstChild.nodeValue = newCopyrightText;
     }
 }

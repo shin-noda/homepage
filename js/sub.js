@@ -11,6 +11,9 @@ class SubPage {
         // Set the parent element
         // In this assignment, it's .container
         this.parentElement = document.querySelector(parentElement);
+        
+        // Update the copyright
+        this.addYearAndName();
     }
 
     // This sets all addEventListener
@@ -23,5 +26,17 @@ class SubPage {
     processBackButton() {
         // Go to the main page
         window.location.href = "../index.html";
+    }
+
+    // This is for copyright
+    addYearAndName() {
+        const e = this.parentElement.querySelector(".footer-content");
+
+        // Add year and name
+        const year = new Date().getFullYear();
+
+        const newCopyrightText = e.firstChild.nodeValue + " " + year + " Shin";
+
+        e.firstChild.nodeValue = newCopyrightText;
     }
 }
