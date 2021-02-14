@@ -19,6 +19,7 @@ class Project {
     // This sets all addEventListener
     setAllEventListeners() {
         // Set functions for buttons
+        this.parentElement.querySelector("#bmi-calculator").addEventListener("click", () => this.processBMICalculator());
         this.parentElement.querySelector("#knights-tour").addEventListener("click", () => this.processKnightsTour());
         this.parentElement.querySelector("#ontario-license-plate-identifier").addEventListener("click", () => this.processOntarioLicense());
         this.parentElement.querySelector("#abc-bookstore").addEventListener("click", () => this.processABCBookstore());
@@ -27,6 +28,12 @@ class Project {
 
         // Set the function for back-button
         this.parentElement.querySelector(".back-button").addEventListener("click", () => this.processBackButton());
+    }
+
+
+    // BMI Calculator
+    processBMICalculator() {
+        window.location.href = "../pages/project-pages/bmi-calculator.html";
     }
 
     // This is for Knight's Tour
