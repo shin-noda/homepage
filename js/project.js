@@ -19,6 +19,7 @@ class Project {
     // This sets all addEventListener
     setAllEventListeners() {
         // Set functions for buttons
+        this.parentElement.querySelector("#bioluminescent-mushrooms").addEventListener("click", () => this.processBioluminescentMushrooms());
         this.parentElement.querySelector("#bmi-calculator").addEventListener("click", () => this.processBMICalculator());
         this.parentElement.querySelector("#knights-tour").addEventListener("click", () => this.processKnightsTour());
         this.parentElement.querySelector("#ontario-license-plate-identifier").addEventListener("click", () => this.processOntarioLicense());
@@ -30,6 +31,10 @@ class Project {
         this.parentElement.querySelector(".back-button").addEventListener("click", () => this.processBackButton());
     }
 
+    // Bioluminescent Mushrooms
+    processBioluminescentMushrooms() {
+        window.location.href = "../pages/project-pages/bioluminescent-mushrooms.html";
+    }
 
     // BMI Calculator
     processBMICalculator() {
