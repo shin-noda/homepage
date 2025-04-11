@@ -19,6 +19,7 @@ class Project {
     // This sets all addEventListener
     setAllEventListeners() {
         // Set functions for buttons
+        this.parentElement.querySelector("#movie-app").addEventListener("click", () => this.processMovieApp());
         this.parentElement.querySelector("#bioluminescent-mushrooms").addEventListener("click", () => this.processBioluminescentMushrooms());
         this.parentElement.querySelector("#bmi-calculator").addEventListener("click", () => this.processBMICalculator());
         this.parentElement.querySelector("#knights-tour").addEventListener("click", () => this.processKnightsTour());
@@ -31,9 +32,14 @@ class Project {
         this.parentElement.querySelector(".back-button").addEventListener("click", () => this.processBackButton());
     }
 
+    // Movie App
+    processMovieApp() {
+        window.location.href = "https://shin-noda.github.io/movie-app/";
+    }
+
     // Bioluminescent Mushrooms
     processBioluminescentMushrooms() {
-        window.location.href = "../pages/project-pages/bioluminescent-mushrooms.html";
+        window.location.href = "https://storymaps.arcgis.com/stories/97af0d8c4124439491ccf05be43ce8b0";
     }
 
     // BMI Calculator
