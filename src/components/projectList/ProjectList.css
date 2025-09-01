@@ -29,15 +29,14 @@
   object-fit: contain;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-  display: block; /* ensures no inline spacing issues */
-  margin: 0 auto; /* extra safety for horizontal centering */
+  display: block;       /* ensures no inline spacing issues */
+  margin: 0 auto;       /* extra safety for horizontal centering */
 }
 
 /* Floating arrows */
 .arrow {
   position: absolute;
-  font-weight: bold;
-  top: 50%;
+  top: 50%;               /* vertical middle of image */
   transform: translateY(-50%);
   width: 50px;
   height: 50px;
@@ -45,6 +44,7 @@
   background: rgba(0,0,0,0.5);
   color: white;
   font-size: 1.5rem;
+  font-weight: bold;
   border: none;
   cursor: pointer;
   display: flex;
@@ -55,18 +55,38 @@
   transition: background 0.2s;
 }
 
+.arrow img {
+  width: 24px;
+  height: 24px;
+  display: block;
+  filter: invert(100%); /* turns black to white */
+}
+
 .arrow:hover {
   background: rgba(0,0,0,0.7);
 }
 
 .left-arrow {
-  left: 10px; /* adjust distance from image edge */
+  left: 10px; /* distance from image edge */
 }
 
 .right-arrow {
   right: 10px;
 }
 
-/* Optional: hide scroll bar */
+/* Optional: hide scroll bar for cleaner look */
 .project-list::-webkit-scrollbar { display: none; }
 .project-list { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* ===== Mobile adjustments ===== */
+@media (max-width: 768px) {
+  .arrow {
+    width: 40px;
+    height: 40px;
+  }
+
+  .arrow img {
+    width: 20px;
+    height: 20px;
+  }
+}

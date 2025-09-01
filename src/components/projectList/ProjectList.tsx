@@ -1,9 +1,17 @@
 import { useRef, useState, useEffect } from "react";
 import ProjectCard from "../projectCard/ProjectCard";
+import LeftArrow from "../../assets/icons/left-arrow.svg";
+import RightArrow from "../../assets/icons/right-arrow.svg";
 import "./ProjectList.css";
 
-interface Project { title: string; imageSrc: string; link: string; }
-interface ProjectListProps { projects: Project[]; }
+interface Project { 
+  title: string; 
+  imageSrc: string; 
+  link: string; 
+}
+interface ProjectListProps { 
+  projects: Project[]; 
+}
 
 const ProjectList = ({ projects }: ProjectListProps) => {
   const listRef = useRef<HTMLDivElement>(null);
@@ -19,7 +27,7 @@ const ProjectList = ({ projects }: ProjectListProps) => {
     }
   };
 
-  // Optional: sync currentIndex when user scrolls manually
+  // Sync currentIndex when user scrolls manually
   useEffect(() => {
     const container = listRef.current;
     if (!container) return;
@@ -37,18 +45,23 @@ const ProjectList = ({ projects }: ProjectListProps) => {
     <div className="project-list-container">
       <div className="project-list" ref={listRef}>
         {projects.map((project, index) => (
-          <ProjectCard key={index} imageSrc={project.imageSrc} link={project.link} />
+          <ProjectCard 
+            key={index} 
+            imageSrc={project.imageSrc} 
+            link={project.link} 
+          />
         ))}
       </div>
 
       {currentIndex > 0 && (
         <button className="arrow left-arrow" onClick={() => scroll("left")}>
-          &#8592;
+          <img src={LeftArrow} alt="Previous" />
         </button>
       )}
+
       {currentIndex < projects.length - 1 && (
         <button className="arrow right-arrow" onClick={() => scroll("right")}>
-          &#8594;
+          <img src={RightArrow} alt="Next" />
         </button>
       )}
     </div>
