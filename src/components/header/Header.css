@@ -38,3 +38,14 @@
   font-weight: 500;
   transition: color 0.2s ease;
 }
+
+/* ===== Mobile styles ===== */
+@media (max-width: 768px) {
+  .header .logo {
+    font-size: 1.8rem; /* bigger on phone */
+  }
+
+  .nav-links a {
+    font-size: 1.2rem; /* easier to read / tap */
+  }
+}

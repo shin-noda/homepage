@@ -23,3 +23,10 @@
   text-decoration: none;
   transition: color 0.2s ease;
 }
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .footer {
+    font-size: 1rem; /* slightly bigger for readability */
+  }
+}
