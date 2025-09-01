@@ -1,12 +1,12 @@
 import './App.css'
-import { BrowserRouter as Routes, Route, BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 
 // Pages
-import Home from './pages/home/Home'
-import Projects from './pages/projects/Projects'
+import Home from './pages/home/Home';
+import Projects from './pages/projects/Projects';
 
 function App() {
   return (
@@ -22,12 +22,10 @@ function App() {
         </main>
 
         <Footer />
-
-        {/* Floating chatbot. Under construction. */}
         {/* <ChatBotWindow /> */}
       </div>
     </BrowserRouter>
   )
 }
 
-export default App
+export default App;
