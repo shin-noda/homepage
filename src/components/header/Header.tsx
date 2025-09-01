@@ -1,5 +1,5 @@
 // /src/components/header/Header.tsx
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
@@ -7,7 +7,7 @@ const Header = () => {
     <header className="header">
       <div className="header-container">
         <h1 className="logo">
-          <a href="/">Homepage</a>
+          <Link to="/">Homepage</Link>
         </h1>
 
         <nav className="nav-links">
