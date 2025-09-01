@@ -1,5 +1,5 @@
 import './App.css'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Routes, Route, BrowserRouter } from 'react-router-dom';
 
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
@@ -10,7 +10,7 @@ import Projects from './pages/projects/Projects'
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter basename="/homepage">
       <div className="app">
         <Header />
 
@@ -26,7 +26,7 @@ function App() {
         {/* Floating chatbot. Under construction. */}
         {/* <ChatBotWindow /> */}
       </div>
-    </Router>
+    </BrowserRouter>
   )
 }
 
