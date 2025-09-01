@@ -3,24 +3,24 @@
 }
 
 .about-image-wrapper {
-  position: relative; /* parent must be relative */
+  position: relative;
 }
 
 .about-coffee-img {
   width: 100%;
   height: auto;
   display: block;
-  filter: brightness(0.6); /* make the image darker */
+  filter: brightness(0.6);
 }
 
 .about-text {
   position: absolute;
-  top: 0;                  /* top of image */
-  left: 0;                 /* align with left edge */
-  right: 0;                /* stretch to right edge */
-  margin: 0 auto;          /* centers block content */
-  max-width: 1200px;       /* optional limit for readability */
-  text-align: center;      /* centers text inside block */
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  max-width: 1200px;
+  text-align: center;
   padding: 1rem;
   color: #fff;
   text-shadow: 2px 2px 4px #000;
@@ -39,20 +39,14 @@
 }
 
 .map-link {
-  display: inline-block;
-  margin-top: 1.5rem;
-  padding: 0.75rem 1.5rem;
-  background-color: #ffdd57;
-  color: #111;
+  color: #ffdd57;           /* bright highlight color */
   text-decoration: none;
-  border-radius: 6px;
   font-weight: bold;
-  transition: background-color 0.2s ease;
-  text-shadow: none; /* disable halo */
+  transition: color 0.2s ease;
 }
 
 .map-link:hover {
-  background-color: #fbbc04;
+  color: #fbbc04;            /* hover color for feedback */
 }
 
 @media (max-width: 600px) {
