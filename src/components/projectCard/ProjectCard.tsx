@@ -1,4 +1,6 @@
 import "./ProjectCard.css";
+import LeftArrow from "../../assets/icons/left-arrow.svg";
+import RightArrow from "../../assets/icons/right-arrow.svg";
 
 interface ProjectCardProps {
   imageSrc: string;
@@ -25,12 +27,12 @@ const ProjectCard = ({
 
       {showPrev && (
         <button className="arrow left-arrow" onClick={onPrev}>
-          &#8592;
+          <img src={LeftArrow} alt="Previous" />
         </button>
       )}
       {showNext && (
         <button className="arrow right-arrow" onClick={onNext}>
-          &#8594;
+          <img src={RightArrow} alt="Next" />
         </button>
       )}
     </div>
