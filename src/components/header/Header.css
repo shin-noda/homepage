@@ -1,0 +1,40 @@
+/* /src/components/header/Header.css */
+.header {
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  position: sticky;
+  background-color: #fff;
+}
+
+.header-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.logo a {
+  color: #000;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  margin-right: 20px;
+}
+
+.nav-links a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}

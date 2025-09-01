@@ -1,0 +1,70 @@
+.about-section {
+  width: 100%;
+}
+
+.about-image-wrapper {
+  position: relative; /* parent must be relative */
+}
+
+.about-coffee-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: brightness(0.6); /* make the image darker */
+}
+
+.about-text {
+  position: absolute;
+  top: 0;                  /* top of image */
+  left: 0;                 /* align with left edge */
+  right: 0;                /* stretch to right edge */
+  margin: 0 auto;          /* centers block content */
+  max-width: 1200px;       /* optional limit for readability */
+  text-align: center;      /* centers text inside block */
+  padding: 1rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000;
+  z-index: 2;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: 1.7rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.map-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #ffdd57;
+  color: #111;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+  text-shadow: none; /* disable halo */
+}
+
+.map-link:hover {
+  background-color: #fbbc04;
+}
+
+@media (max-width: 600px) {
+  .about-text {
+    padding: 0 1rem;
+  }
+
+  .about-text h2 {
+    font-size: 2rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+  }
+}
