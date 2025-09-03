@@ -8,7 +8,7 @@ import Bioluminescent from "../../assets/project-images/bioluminescent.png";
 
 const projects = [
   { title: "Picthesia", imageSrc: Picthesia, link: "https://picthesia.appwrite.network" },
-  { title: "CoFounderify", imageSrc: CoFounderify, link: "https://www.cofounderify.com" },
+  { title: "CoFounderify", imageSrc: CoFounderify, link: "https://github.com/shin-noda/cofounderify" },
   { title: "Lights After the Bible", imageSrc: LightsAftertheBible, link: "https://lightsafterthebible.com" },
   { title: "Bioluminescent Mushrooms", imageSrc: Bioluminescent, link: "https://storymaps.arcgis.com/stories/97af0d8c4124439491ccf05be43ce8b0" },
 ];
