@@ -11,7 +11,7 @@ const projects = [
   { title: "Picthesia", imageSrc: Picthesia, link: "https://picthesia.appwrite.network" },
   { title: "CoFounderify", imageSrc: CoFounderify, link: "https://github.com/shin-noda/cofounderify" },
   { title: "Lights After the Bible", imageSrc: LightsAftertheBible, link: "https://lightsafterthebible.com" },
-  { title: "Project Earth Globe", imageSrc: ProjectEarthGlobe, link: "https://shin-noda.github.io/earth-global/" },
+  { title: "Project Earth Globe", imageSrc: ProjectEarthGlobe, link: "https://shin-noda.github.io/earth-globe/" },
   { title: "Bioluminescent Mushrooms", imageSrc: Bioluminescent, link: "https://storymaps.arcgis.com/stories/97af0d8c4124439491ccf05be43ce8b0" },
 ];
 
