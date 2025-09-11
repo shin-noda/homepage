@@ -1,10 +1,10 @@
 name: Deploy to GitHub Pages
 
-# This workflow runs whenever you push code to the 'main' branch
+# This workflow runs whenever you push code to the 'master' branch
 on:
   push:
     branches:
-      - main  # Only run on pushes to main
+      - master  # Only run on pushes to master
 
 permissions:
   contents: write  # Give GitHub Actions permission to push
