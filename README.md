@@ -1,6 +1,9 @@
 # My homepage
 This project is a React + Vite website hosted on GitHub Pages. 
 
+## Live
+[Visit my homepage](https://shin-noda.github.io/homepage/)
+
 ## Features
 - Built with **React** + **TypeScript**
 - Fast development with **Vite**
